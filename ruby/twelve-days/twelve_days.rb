@@ -6,7 +6,7 @@ HUMAN_ORDINALS = ["first", "second", "third", "fourth", "fifth", "sixth", "seven
 INTRO_TEXT = 'On the %s day of Christmas my true love gave to me:'
 
 
-class TwelveDaysTest  
+class TwelveDays
   def self.song
     whole_song = ""
     
