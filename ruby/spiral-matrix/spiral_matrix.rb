@@ -7,6 +7,11 @@ class SpiralMatrix
     @spiral = nil
   end
 
+  ###  alternative approaches:
+  # - keep a direction variable, iterate setting cell by cell, if cell already completed
+  #   or out of bounds then pivot directction / pivot right
+  # - 
+  #
   def matrix
     return [] if @size == 0 
 
@@ -81,6 +86,6 @@ class SpiralMatrix
 end
 
 
-# s = SpiralMatrix.new(4)
-# s.matrix.each { |r| puts r.to_s + "\n" }
-# puts s.spiral.inspect
+s = SpiralMatrix.new(6)
+s.matrix.each { |r| puts r.to_s + "\n" }
+puts s.spiral.inspect
