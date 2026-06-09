@@ -16,12 +16,10 @@ class SumOfMultiples
   end
 
   def to(level)
-    return 0 if items.all? { |item| item >= level }
-
     points = []
 
     items.each do |item|
-      next if item >= level
+      next if item >= level || item == 0
 
       n = item
       
