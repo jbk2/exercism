@@ -16,6 +16,8 @@ class SumOfMultiples
   end
 
   def to(level)
+    return 0 if items.nil?
+
     points = []
 
     items.each do |item|

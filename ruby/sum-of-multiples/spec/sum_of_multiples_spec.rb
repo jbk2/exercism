@@ -73,7 +73,7 @@ RSpec.describe SumOfMultiples do
     expect(actual).to eq(expected)
   end
 
-  xit 'no factors means an empty sum' do
+  it 'no factors means an empty sum' do
     actual = SumOfMultiples.new.to(10_000)
     expected = 0
     expect(actual).to eq(expected)
