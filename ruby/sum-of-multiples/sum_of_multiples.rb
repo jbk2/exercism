@@ -34,6 +34,25 @@ class SumOfMultiples
     points.uniq.sum
   end
 
+  
+  def to_2(level)
+    return 0 if items.nil?
+
+    points = []
+
+    items.each do |item|
+      next if item >= level || item == 0
+      
+      multiples_count = (level - 1) / item
+      multiples_sum = multiples_count * (multiples_count + 1) / 2
+      final_sum = multiples_sum * item
+
+      points << final_sum
+    end
+
+    points.uniq.sum
+  end
+
 end
 
 s = SumOfMultiples.new(3, 5).to(4)
